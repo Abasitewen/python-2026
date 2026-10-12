@@ -1,0 +1,11 @@
+OrderID,Product,Quantity,Price,Date,Region
+1001,Laptop,1,1200,2023-01-15,North
+1002,Mouse,2,25.50,2023-01-16,south
+1003,Keyboard,,80,2023-01-17,North
+1004,Monitor,1,300.00,2023-01-18,West
+1005,Laptop,1,1200,2023-01-20,North
+1002,Mouse,2,25.50,2023-01-16,south
+1006,Webcam,1,50,2023-01-21,EAST
+1007,HDMI Cable,3,15,2023-01-22,West
+1008,Keyboard,1,NaN,2023-01-24,North
+1009,Monitor,1,300,2023-01-25,
