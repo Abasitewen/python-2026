@@ -244,11 +244,3 @@ class PNGImage(EditableColorImage):
         raw_jpg_image = self.image[:, :, :3] * self.image[:, :, 3:4] * 255
         return raw_jpg_image.astype("uint8")
 
-
-if __name__ == "__main__":
-    picture = JpegImage("/home/jacopo-salvalaggio/Code/mdmc/python-2026/python-1/iris_versicolor.jpg")
-    picture.contrast(50)
-    picture.commit_edits()
-    picture.show()
-    picture.histogram(single_channel=False)
-    picture.histogram(single_channel=False, force_bins=True)
