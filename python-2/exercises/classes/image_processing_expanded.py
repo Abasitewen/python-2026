@@ -63,6 +63,7 @@ class Image(Bitmap):
 
     def _load_array(self, image_array: np.ndarray) -> None:
         self.image = image_array
+        self.dtype = image_array.dtype
 
     @staticmethod
     def _show_array(image_array) -> None:
