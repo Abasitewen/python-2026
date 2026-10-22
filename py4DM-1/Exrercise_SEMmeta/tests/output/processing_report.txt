@@ -1,0 +1,9 @@
+SEM IMAGE PROCESSING REPORT
+============================================================
+
+STATUS     IMAGE
+------------------------------------------------------------
+OK         imgs/3/protesi_anca1_08.tif
+ERROR      imgs/4/perovskite-inside-010.tif
+OK         imgs/2/testdef/LIL test_defect02.tif
+OK         imgs/1/12_50_vero_09.tif
