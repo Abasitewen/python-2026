@@ -42,7 +42,7 @@ class TestImageProcessing(TestCase):
 
     def test_png_range(self):
         self.assertTrue(np.max(self.png_image.image) <= 1.0)
-        self.assertTrue(np.min(self.png_image.image) <= 0.0)
+        self.assertTrue(np.min(self.png_image.image) >= 0.0)
 
     def test_png_clip_threshold(self):
         for value in [], "ciao":

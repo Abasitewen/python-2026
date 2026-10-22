@@ -18,4 +18,4 @@ class TestImageProcessing(TestCase):
     def test_jpg_range(self):
         x = improc.JPGImage("iris_versicolor.jpg")
         self.assertTrue(np.max(x.image) <= 255)
-        self.assertTrue(np.min(x.image) <= 0)
+        self.assertTrue(np.min(x.image) >= 0)
