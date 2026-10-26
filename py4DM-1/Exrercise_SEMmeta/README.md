@@ -281,7 +281,7 @@ print(cleaner.clean_value("Conjugate posn. = -164.00 mm"))  # expected: -164.00 
 print(cleaner.clean_value("Opt.Aperture = 2"))        # expected: Opt.Aperture = 2  (no unit → unchanged)
 
 print(cleaner.clean_dict({"AP_WD": "WD = 3.18 mm", "AP_X": None, "AP_N": 5}))
-# expected: {'AP_WD': '3.18 mm', 'AP_N': 5}
+# expected: {'AP_WD': '3.18 mm', 'AP_N': '5'}
 ```
 
 Then run `pytest -v -k clean` — the two cleaner tests should pass.
