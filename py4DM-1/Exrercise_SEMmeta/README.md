@@ -45,23 +45,40 @@ By the end of this exercise you should be able to:
 
 ### 3.2 Create the group repository (one student)
 
-1. **Create a GitHub repository** for your group. The repository name must follow this format:
+1. On GitHub, create a new **empty** repository for your group (do *not* add a
+   README, .gitignore, or license). The name must follow this format:
 
-   ```
-   Py4DM1-name-of-the-group
-   ```
+       Py4DM1-name-of-the-group
 
-2. Clone the course repository and push its content to your group repository:
+2. Update your local copy of the course repository so you have the latest
+   version of the exercise:
 
-   ```bash
-   git clone <course-repository-url>
-   cd <course-repository-folder>
-   git remote remove origin
-   git remote add origin https://github.com/<user>/Py4DM1-name-of-the-group.git
-   git push -u origin main
-   ```
+       cd python-2026
+       git pull
 
-3. On GitHub, open **Settings → Collaborators** and add the other two students.
+3. Copy the exercise folder **outside** the course repository and turn it into
+   a new Git repository:
+
+       cd ..
+       cp -r python-2026/<exercise-folder> Py4DM1-name-of-the-group
+       cd Py4DM1-name-of-the-group
+       git init -b main
+       git add .
+       git commit -m "Initial commit: exercise starter files"
+
+4. Connect it to your group repository on GitHub and push:
+
+       git remote add origin https://github.com/<user>/Py4DM1-name-of-the-group.git
+       git push -u origin main
+
+5. On GitHub, open **Settings → Collaborators** and add the other two students.
+   They can then clone the group repository:
+
+       git clone https://github.com/<user>/Py4DM1-name-of-the-group.git
+
+> Do not run any of these commands inside the `python-2026` folder: your
+> personal course copy should stay linked to the course repository so you can
+> keep pulling updates.
 
 ### 3.3 Create your branch (every student)
 
