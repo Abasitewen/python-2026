@@ -70,8 +70,8 @@ class JsonCleaner:
         None values are removed, and all other values are kept as-is.
 
         Example:
-            {"AP_WD": "WD = 3.18 mm", "AP_X": None, "AP_N": 5}
-            ->  {"AP_WD": "3.18 mm", "AP_N": 5}
+            {"AP_WD": "WD = 3.18 mm", "AP_X": None, "AP_N": '5'}
+            ->  {"AP_WD": "3.18 mm", "AP_N": '5'}
 
         Returns:
             a new dictionary with the cleaned entries
